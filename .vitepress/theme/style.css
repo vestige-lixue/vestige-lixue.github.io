@@ -1,0 +1,91 @@
+/* The hero heading is replaced by .hero-logo, so the default one stays empty. */
+.VPHero .heading:empty {
+    display: none;
+}
+
+.VPNavBarTitle > a.title > .VPImage {
+    height: 2.4rem;
+}
+
+.hero-logo {
+    margin: 0 auto 16px;
+    width: 240px;
+}
+
+.hero-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-logo .dark,
+.dark .hero-logo .light {
+    display: none;
+}
+
+.dark .hero-logo .dark {
+    display: block;
+}
+
+.hero-name {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+    color: var(--vp-c-text-1);
+}
+
+@media (min-width: 640px) {
+    .hero-logo {
+        width: 320px;
+    }
+}
+
+@media (min-width: 960px) {
+    .hero-logo {
+        margin-left: 0;
+        width: 400px;
+    }
+}
+
+/* Until the recording exists, the empty column only takes space beside the text. */
+@media (max-width: 959px) {
+    .VPHero .image {
+        display: none;
+    }
+}
+
+/*
+ * VitePress folds the language, appearance and GitHub items into the "..." menu below 1280px,
+ * although they fit beside the menu from 768px. The search field grows up to 320px and shrinks first.
+ */
+@media (min-width: 768px) {
+    .VPNav .VPNavBar .VPNavBarTranslations,
+    .VPNav .VPNavBar .VPNavBarAppearance,
+    .VPNav .VPNavBar .VPNavBarSocialLinks {
+        display: flex;
+        align-items: center;
+    }
+
+    .VPNav .VPNavBar .VPNavBarExtra {
+        display: none;
+    }
+
+    .VPNavBarSearch #local-search {
+        flex: 0 1 320px;
+        min-width: 0;
+    }
+}
+
+/*
+ * Home page: the five features wrap as 3 + 2 instead of 4 + 1, and the hero and features share
+ * a narrower width so the motivation text below does not look as narrow beside them.
+ */
+@media (min-width: 960px) {
+    .VPHome .VPHero .container,
+    .VPHome .VPFeatures .container {
+        max-width: 1024px;
+    }
+
+    .VPHome .VPFeatures .item.grid-4 {
+        width: calc(100% / 3);
+    }
+}
