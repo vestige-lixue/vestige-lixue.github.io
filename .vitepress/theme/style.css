@@ -129,16 +129,12 @@
 }
 
 /*
- * Home page: the five features wrap as 3 + 2 instead of 4 + 1, and the hero and features share
- * a narrower width so the motivation text below does not look as narrow beside them.
+ * Home page: the hero and features share a narrower width so the motivation text below does not
+ * look as narrow beside them.
  */
 @media (min-width: 960px) {
     .VPHome .VPHero .container,
     .VPHome .VPFeatures .container {
         max-width: 1024px;
-    }
-
-    .VPHome .VPFeatures .item.grid-4 {
-        width: calc(100% / 3);
     }
 }

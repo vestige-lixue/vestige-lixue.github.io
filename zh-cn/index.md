@@ -22,9 +22,9 @@ features:
     details: 使用 JSON 格式的 .vestige 项目文件组织录音与转写文本，支持自动保存，并引用原始媒体文件。
   - title: 导出转写文本
     details: 将原始转写文本或校对后的版本导出为纯文本或 SRT 字幕。
+  - title: 自由开源
+    details: 以 AGPL-3.0-or-later 许可发布的自由软件。任何人都可以免费使用、研究、修改和分享，分享出去的版本也须沿用同一许可。
 ---
-
-<!-- 演示录屏放在这里：一段边听边校对的短循环视频。 -->
 
 <div class="vp-doc" style="max-width: 688px; margin: 64px auto 0;">
 

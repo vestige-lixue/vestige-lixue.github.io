@@ -22,6 +22,8 @@ features:
     details: Organize recordings and transcripts in .vestige project files in JSON format, with autosave and references to the original media files.
   - title: Exporting transcripts
     details: Export the original or corrected transcripts as plain text or SRT subtitles.
+  - title: Free and open source
+    details: Free software under AGPL-3.0-or-later. Anyone may use, study, modify, and share it at no cost, and versions shared with others stay under the same license.
 ---
 
 <div class="vp-doc" style="max-width: 688px; margin: 64px auto 0;">
