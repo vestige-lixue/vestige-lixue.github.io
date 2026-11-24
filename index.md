@@ -24,8 +24,6 @@ features:
     details: Export the original or corrected transcripts as plain text or SRT subtitles.
 ---
 
-<!-- Demo recording goes here: a short looping video of listening and proofreading together. -->
-
 <div class="vp-doc" style="max-width: 688px; margin: 64px auto 0;">
 
 ## Motivation

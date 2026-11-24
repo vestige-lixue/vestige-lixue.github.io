@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import DefaultTheme from "vitepress/theme";
+import HeroDemo from "./HeroDemo.vue";
 </script>
 
 <template>
@@ -10,9 +11,8 @@ import DefaultTheme from "vitepress/theme";
                 <img class="dark" src="/logo-white.svg" alt="Vestige" />
             </h1>
         </template>
-        <!-- Reserves the right column of the hero for the demo recording. -->
         <template #home-hero-image>
-            <div class="hero-media" />
+            <HeroDemo />
         </template>
     </DefaultTheme.Layout>
 </template>
